@@ -1,0 +1,235 @@
+/* formatting */
+.center {
+ font-family: 'Times New Roman', Times, serif;
+ text-align: center;
+
+}
+
+/* formatting */
+input[type=text] {
+ padding: 6px;
+ margin-top: 8px;
+ font-size: 17px;
+ border: none;
+}
+
+/* formatting */
+.center button {
+
+ padding: 8px;
+ margin-top: 10px;
+ margin-left: 10px;
+ background: orange;
+ font-size: 20px;
+ border: none;
+ cursor: pointer;
+}
+
+/* formatting */
+.center button:hover {
+ background: #FF9919;
+ text-decoration: underline;
+ text-decoration-color: burlywood;
+ font-style: italic;
+}
+
+/* formatting */
+header {
+ background-color: #FF9919;
+}
+
+/* formatting */
+* {
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ list-style: none;
+ box-sizing: border-box;
+}
+
+/* formatting for the logo */
+.logos1 {
+ width: auto;
+ height: 90%;
+}
+
+/* gradient */
+body {
+ font-family: montserrat;
+ background-color: #121313;
+ background-attachment: fixed;
+ background-size: contain;
+
+}
+
+/* formatting for the nav */
+nav {
+ background: #FF9919;
+ height: 80px;
+ width: 100%;
+ position: sticky;
+}
+
+/* formatting */
+label.logo {
+ color: #121313;
+ font-size: 35px;
+ line-height: 80px;
+ /* padding: 0 100px; */
+ font-weight: bold;
+}
+
+/* formatting */
+nav ul {
+ float: right;
+ margin-right: 20px;
+}
+
+nav ul li {
+ display: inline-block;
+ line-height: 80px;
+ margin: 0 5px;
+}
+
+nav ul li a {
+ color: #121313;
+ font-size: 17px;
+ padding: 7px;
+ border-radius: 3px;
+ text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+ background: black;
+ transition: .5s;
+ color: #f6f6f6;
+}
+
+/* formatting for the button */
+.checkbtn {
+ font-size: 30px;
+ color: #121313;
+ float: right;
+ line-height: 80px;
+ margin-right: 40px;
+ cursor: pointer;
+ display: none;
+}
+
+#check {
+ display: none;
+}
+
+/* formatting for if you have a smaller screen */
+@media (max-width: 952px) {
+ label.logo {
+  font-size: 30px;
+  /* padding-left: 50px; */
+ }
+
+ nav ul li a {
+  font-size: 16px;
+ }
+}
+
+/* formatting for if you have a smaller screen */
+@media (max-width: 858px) {
+ .checkbtn {
+  display: block;
+ }
+
+ ul {
+  width: 100%;
+  height: 100vh;
+  background: #2c3e50;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+  color:#121313;
+ }
+
+ nav ul li {
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+ }
+
+ nav ul li a {
+  font-size: 20px;
+ }
+
+ a:hover,
+ a.active {
+  background: none;
+  color: #0082e6;
+ }
+
+ #check:checked~ul {
+  display: none;
+ }
+}
+
+
+/* formatting for the flex */
+.main {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.main2 {
+ border-radius: 25px;
+ border: 5px solid black;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+/* formatting */
+#myInput {
+ background-image: url('/css/searchicon.png');
+ background-position: 10px 12px;
+ background-repeat: no-repeat;
+ width: 100%;
+ font-size: 16px;
+ padding: 12px 20px 12px 40px;
+ border: 1px solid #ddd;
+ margin-bottom: 12px;
+}
+
+/* formatting */
+#myUL {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+}
+
+/* formatting */
+#myUL li a {
+ border: 1px solid #ddd;
+ margin-top: -1px;
+ /* Prevent double borders */
+ background-color: #f6f6f6;
+ padding: 12px;
+ text-decoration: none;
+ font-size: 18px;
+ color: black;
+ display: block
+}
+
+/* formatting */
+#myUL li a:hover:not(.header) {
+ background-color: #eee;
+}
+
+footer {
+ /* footer */
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ text-align: center;
+ border: 2px solid black;
+ background-color: lightsteelblue;
+ border-radius: 25px;
+}

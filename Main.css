@@ -25,6 +25,12 @@ input[type=text] {
  cursor: pointer;
 }
 
+.center{
+ display: flex;
+ justify-content: space-around;
+ text-align: center;
+}
+
 /* formatting */
 .center button:hover {
  background: #FF9919;
@@ -36,6 +42,8 @@ input[type=text] {
 /* formatting */
 header {
  background-color: #FF9919;
+ text-align: center;
+ position: fixed;
 }
 
 /* formatting */
@@ -65,9 +73,10 @@ body {
 /* formatting for the nav */
 nav {
  background: #FF9919;
+ /* margin-top: 37px; */
  height: 80px;
  width: 100%;
- position: sticky;
+ position: fixed;
 }
 
 /* formatting */
@@ -232,4 +241,28 @@ footer {
  border: 2px solid black;
  background-color: lightsteelblue;
  border-radius: 25px;
+}
+
+#container{
+ padding:800px;
+ display:flex;
+ flex-direction: column;
+ height: 28.125rem;
+ width: 28.125rem;
+ justify-content: space-evenly;
+ align-content: space-between;
+ margin: auto;
+ background-color: black;
+ border-radius: 1.5625rem;
+ color: whitesmoke;
+}
+
+#cheese{
+ border-radius: 20rem;
+ height: 12.5rem;
+ width: 12.5rem;
+}
+
+.about{
+ color: white;
 }

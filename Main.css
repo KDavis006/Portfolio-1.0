@@ -25,12 +25,6 @@ input[type=text] {
  cursor: pointer;
 }
 
-.center{
- display: flex;
- justify-content: space-around;
- text-align: center;
-}
-
 /* formatting */
 .center button:hover {
  background: #FF9919;
@@ -43,7 +37,6 @@ input[type=text] {
 header {
  background-color: #FF9919;
  text-align: center;
- position: fixed;
 }
 
 /* formatting */

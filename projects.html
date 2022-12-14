@@ -10,7 +10,7 @@
 </head>
 
 <body>
- <script src="./Main.js"></script>
+ 
 
  <nav>
   <!-- <Header>
@@ -46,31 +46,42 @@
  
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-   <div class="text">
-    <h1>Caption Text</h1>
-   </div>
-   <br><br>
    <div class="numbertext">1 / 5</div>
    <img class="image" id="img1"src="./images/Eternal armada.png" style="width:100%" >
+  <div class="text">
+    <h1>Wordle Like Game</h1>
+    <button class="imgbutton" src="">Git repository</button>
+    <button class="imgbutton" src="">Visit Site</button>
+  </div>
   </div>
  
   <div class="mySlides fade">
    <div class="numbertext">2 / 5</div>
    <img class="image" src="./images/character tier list.png" style="width:100%">
-   <div class="text"><h1>Caption Text</h1></div>
+   <div class="text">
+    <h1>Character Tier List</h1>
+    <button class="imgbutton" src="">Git repository</button>
+    <button  class="imgbutton" src="">Visit Site</button>
+  </div>
   </div>
  
   <div class="mySlides fade">
    <div class="numbertext">3 / 5</div>
    <img class="image" src="./images/calc.png" style="width:100%">
-   <div class="text"><h1>Caption Text</h1></div>
+   <div class="text">
+    <h1>Calculator</h1>
+  <button class="imgbutton" src="">Git repository</button>
+  <button class="imgbutton" src="">Visit Site</button>
+  </div>
   </div>
 
     <div class="mySlides fade">
      <div class="numbertext">4 / 5</div>
      <img class="image" src="./images/Tic tac toe.png" style="width:100%">
      <div class="text">
-      <h1>Caption Text</h1>
+      <h1>Tic Tac Toe</h1>
+      <button class="imgbutton" src="">Git repository</button>
+      <button class="imgbutton" src="">Visit Site</button>
      </div>
     </div>
 
@@ -78,8 +89,11 @@
      <div class="numbertext">5 / 5</div>
      <img class="image" src="./images/littlemissmia.png" style="width:100%">
      <div class="text">
-      <h1>Caption Text</h1>
-     </div>
+      <h1>LittleMissMia Website</h1>
+     
+     <button class="imgbutton" href="" target="_blank">Git repository</button>
+     <a href="https://kdavis006.github.io/littlemissmia/" target="_blank"><button class="imgbutton" >Visit Site</button></a>
+    </div>
     </div>
  
   <!-- Next and previous buttons -->
@@ -90,12 +104,15 @@
  
  <!-- The dots/circles -->
  <div style="text-align:center">
-  <span class="dot active" onclick="currentSlide(1)"></span>
+  <span class="dot active"  onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
   <span class="dot" onclick="currentSlide(5)"></span>
  </div>
 
+
+ <button onload="currentSlide(1)" style="display: none;"></button>
+<script src="./Main.js"></script>
  </body>
  </html>

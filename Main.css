@@ -1,3 +1,7 @@
+/* *{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+} */
+
 /* formatting */
 .center {
  font-family: 'Times New Roman', Times, serif;
@@ -233,11 +237,10 @@ footer {
 }
 
 #container{
- padding-top:350px;
  display:flex;
  flex-direction: column;
- height: 28.125rem;
- width: 28.125rem;
+ height: 38.125rem;
+ width: 38.125rem;
  justify-content: space-evenly;
  align-content: space-between;
  margin: auto;
@@ -247,7 +250,7 @@ footer {
 }
 
 #cheese{
- margin-left: 5.5rem;
+ margin-left: 9.5rem;
  border-radius: 20rem;
  height: 17.5rem;
  width: 17.5rem;
@@ -317,8 +320,8 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.prev,
+.next {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -435,3 +438,71 @@ img {
   animation-duration: 1s;
   opacity: 1;
 } */
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 5px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #121313;
+  color: whitesmoke;
+}
+
+input[type=button] {
+  background-color: violet;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  animation-name: colorfade2;
+  animation-duration: .75s;
+}
+
+@keyframes colorfade2 {
+  from {
+    background-color: purple;
+  }
+
+  to {
+    background-color: violet;
+  }
+}
+
+input[type=button]:hover {
+  background-color: purple;
+  animation-name: colorfade;
+  animation-duration: .75s;
+}
+
+@keyframes colorfade {
+  from {
+    background-color: violet;
+  }
+
+  to {
+    background-color: purple;
+  }
+}
+
+.container2 {
+  
+  border-radius: 5px;
+  background-color: #121313;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.name1{
+  text-align: center;
+  /* margin-top: 100px; */
+  color:whitesmoke;
+  font-size: xx-large;
+  text-shadow: violet;
+}

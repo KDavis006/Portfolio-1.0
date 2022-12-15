@@ -35,3 +35,19 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'silvanarixkyle@gmail.com',
+        From: document.getElementById("fname").innerHTML,
+        Subject: "Sending Email from Portfolio",
+        Body: document.getElementById("subject").innerHTML,
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }

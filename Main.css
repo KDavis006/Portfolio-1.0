@@ -144,7 +144,7 @@ a:hover {
  ul {
   width: 100%;
   height: 100vh;
-  background: #2c3e50;
+  background: #103963;
   top: 80px;
   left: -100%;
   text-align: center;
@@ -247,6 +247,7 @@ footer {
  background-color: black;
  border-radius: 1.5625rem;
  color: whitesmoke;
+ margin-top: 50px;
 }
 
 #cheese{
@@ -505,4 +506,19 @@ input[type=button]:hover {
   color:whitesmoke;
   font-size: xx-large;
   text-shadow: violet;
+}
+
+#resume{
+  background-color: #121313;
+  color:whitesmoke;
+  text-align: center;
+}
+
+h3, h2, h1{
+  color: #FF9919;
+}
+
+.max{
+  max-width: 700px;
+  margin-left: 50vh;
 }

@@ -79,6 +79,7 @@ label.logo {
  font-size: 35px;
  line-height: 80px;
  font-weight: bold;
+ margin-left: 4rem;
 }
 
 /* formatting */
@@ -190,17 +191,6 @@ a:hover {
  box-sizing: border-box;
 }
 
-/* formatting */
-#myInput {
- background-image: url('/css/searchicon.png');
- background-position: 10px 12px;
- background-repeat: no-repeat;
- width: 100%;
- font-size: 16px;
- padding: 12px 20px 12px 40px;
- border: 1px solid #ddd;
- margin-bottom: 12px;
-}
 
 /* formatting */
 #myUL {
@@ -236,6 +226,7 @@ footer {
  border-radius: 25px;
 }
 
+/* Main container for the home page */
 #container{
  display:flex;
  flex-direction: column;
@@ -249,9 +240,9 @@ footer {
  color: whitesmoke;
  padding-top: 2rem;
  padding-left: 2rem;
- /* margin-right:128px; */
 }
 
+/* Img for the home page */
 #cheese{
  margin-left: 9rem;
  border-radius: 20rem;
@@ -259,18 +250,20 @@ footer {
  max-width: 17.5rem;
 }
 
+/* Title for the container */
 .about{
  color: white;
  text-align: center;
  font-size: 300%;
 }
 
+/* Text for the container */
 .pg{
  font-size: 150%;
 }
 
 
-
+/* Media query for the img */
 @media (max-width: 400px) {
   #cheese {
     margin-left: 2rem;
@@ -278,7 +271,8 @@ footer {
 }
 
 
-
+/* formatting */
+/* Start of Projects page */
 * {
   box-sizing: border-box
 }
@@ -326,19 +320,14 @@ img {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev,
-.next {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
+/* makes to where you can hover over th img and you see the name and buttons */
 .fade:hover .image{
   animation-name: hover;
   animation-duration: 1s;
   opacity: .3;
 }
 
+/* keyframed for the hover so it looks clean */
 @keyframes hover {
   from {
     opacity: 1
@@ -348,6 +337,7 @@ img {
     opacity: .3
   }
 }
+
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -360,12 +350,14 @@ img {
   opacity: 0;
 }
 
+/* hover for the text of the img so it wil show when you hover over the slides */
 .fade:hover .text {
   animation-name: text;
   animation-duration: 1s;
   opacity: 1;
 }
 
+/* keyframes so it looks clean */
 @keyframes text {
   from {
     opacity: 0
@@ -427,6 +419,7 @@ img {
   }
 }
 
+/* buttons for the slides  */
 .imgbutton{
   margin-right: 5px;
   padding: 5px;
@@ -440,12 +433,10 @@ img {
   size: 200px;
 }
 
-/* .fade:hover .imgbutton {
-  animation-name: text;
-  animation-duration: 1s;
-  opacity: 1;
-} */
 
+/* start of the contact me page */
+
+/* formatting for the input areas */
 input[type=text],
 select,
 textarea {
@@ -461,6 +452,7 @@ textarea {
   color: whitesmoke;
 }
 
+/* submit button formatting */
 input[type=button] {
   background-color: violet;
   color: white;
@@ -472,6 +464,7 @@ input[type=button] {
   animation-duration: .75s;
 }
 
+/* keyframes to make it look good */
 @keyframes colorfade2 {
   from {
     background-color: purple;
@@ -498,6 +491,7 @@ input[type=button]:hover {
   }
 }
 
+/* container for the input areas */
 .container2 {
   
   border-radius: 5px;
@@ -506,6 +500,7 @@ input[type=button]:hover {
   color: whitesmoke;
 }
 
+/* title formatting */
 .name1{
   text-align: center;
   /* margin-top: 100px; */
@@ -514,12 +509,14 @@ input[type=button]:hover {
   text-shadow: violet;
 }
 
+/* start of the resume */
 #resume{
   background-color: #121313;
   color:whitesmoke;
   text-align: center;
 }
 
+/* formatting */
 h3, h2, h1{
   color: #FF9919;
 }

@@ -1,25 +1,20 @@
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
 
 
 let slideIndex = 1;
+// startide for the projects page slideshow
 showSlides(slideIndex);
 
+// adds one when you press the next button then runs the function showSlides
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+// when you press the do it takes you to that dots number slide
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// main function for the slideshow to move 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -36,13 +31,14 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+// function for it to send the email on the contact me page
+// doesn't work yet sorry 
 function sendEmail() {
       Email.send({
         Host: "smtp.gmail.com",
         Username: "sender@email_address.com",
         Password: "Enter your password",
-        To: 'silvanarixkyle@gmail.com',
+        To: 'mygmail@gmail.com',
         From: document.getElementById("fname").innerHTML,
         Subject: "Sending Email from Portfolio",
         Body: document.getElementById("subject").innerHTML,

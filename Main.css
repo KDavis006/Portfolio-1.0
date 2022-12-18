@@ -239,22 +239,24 @@ footer {
 #container{
  display:flex;
  flex-direction: column;
- height: 38.125rem;
- width: 38.125rem;
+ min-height: 38.125rem;
+ max-width: 38.125rem;
  justify-content: space-evenly;
  align-content: space-between;
  margin: auto;
  background-color: black;
- border-radius: 1.5625rem;
+ border-radius: 50px;
  color: whitesmoke;
- margin-top: 50px;
+ padding-top: 2rem;
+ padding-left: 2rem;
+ /* margin-right:128px; */
 }
 
 #cheese{
- margin-left: 9.5rem;
+ margin-left: 9rem;
  border-radius: 20rem;
- height: 17.5rem;
- width: 17.5rem;
+ min-height: 17.5rem;
+ max-width: 17.5rem;
 }
 
 .about{
@@ -269,7 +271,11 @@ footer {
 
 
 
-
+@media (max-width: 400px) {
+  #cheese {
+    margin-left: 2rem;
+  }
+}
 
 
 
@@ -431,7 +437,7 @@ img {
   text-align: center;
   color: whitesmoke;
   cursor: pointer;
-  /* opacity: 0; */
+  size: 200px;
 }
 
 /* .fade:hover .imgbutton {

@@ -33,17 +33,17 @@ function showSlides(n) {
 
 // function for it to send the email on the contact me page
 // doesn't work yet sorry 
-function sendEmail() {
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
-        Password: "Enter your password",
-        To: 'mygmail@gmail.com',
-        From: document.getElementById("fname").innerHTML,
-        Subject: "Sending Email from Portfolio",
-        Body: document.getElementById("subject").innerHTML,
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }
+// function sendEmail() {
+//       Email.send({
+//         Host: "smtp.gmail.com",
+//         Username: "sender@email_address.com",
+//         Password: "Enter your password",
+//         To: 'mygmail@gmail.com',
+//         From: document.getElementById("fname").innerHTML,
+//         Subject: "Sending Email from Portfolio",
+//         Body: document.getElementById("subject").innerHTML,
+//       })
+//         .then(function (message) {
+//           alert("mail sent successfully")
+//         });
+//     }

@@ -313,6 +313,7 @@ img {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: #121313;
 }
 
 /* Position the "next button" to the right */
@@ -526,3 +527,4 @@ h3, h2, h1{
   max-width: 700px;
   margin-left: 50vh;
 }
+
